@@ -1,6 +1,6 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        def helper(n,vis):
+        def validate(n,vis):
             sm=0
             if n==1:
                 return True
@@ -9,5 +9,5 @@ class Solution:
             vis.add(n)
             for i in str(n):
                 sm+=int(i)*int(i)
-            return helper(sm,vis)
-        return helper(n,set())
+            return validate(sm,vis)
+        return validate(n,set())
