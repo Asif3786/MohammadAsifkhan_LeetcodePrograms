@@ -12,9 +12,9 @@ class Solution:
         n = len(s)
         integer = 0
         for i in range(n):
-            if  i == n-1 or roman[s[i]] >= roman[s[i+1]] :
-                integer += roman[s[i]]
-            else :
-                integer -= roman[s[i]]      
-        return integer
+            if i == n-1 or roman[s[i]]>=roman[s[i+1]]:
+                integer+=roman[s[i]]
+            else:
+                integer-=roman[s[i]]
+        return integer        
         
