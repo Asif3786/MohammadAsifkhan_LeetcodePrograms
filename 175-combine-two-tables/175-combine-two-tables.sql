@@ -1,4 +1,3 @@
-select Person.firstName,Person.lastName,
-Address.city,Address.state from Person
-left join Address
-on Person.personId=Address.PersonId
+/* Write your T-SQL query statement below */
+select a.firstName,a.lastName,b.city,b.state from Person as a left join Address as b
+on a.personid=b.personid
